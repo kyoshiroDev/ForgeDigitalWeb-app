@@ -7,7 +7,7 @@ import { inject, Injectable } from '@angular/core';
 export class ContactFormService {
 
   protected readonly http = inject(HttpClient)
-  protected readonly apiUrl = "http://localhost:3000/send-email"
+  protected readonly apiUrl = "https://forgedigitalweb-api.onrender.com/"
 
   formContact(formData: any) {
     this.http.post(this.apiUrl, formData).subscribe({
