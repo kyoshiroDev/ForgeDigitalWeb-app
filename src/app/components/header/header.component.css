@@ -1,15 +1,17 @@
 /* Header */
 header {
+  background: #1d1d1d;
   position: fixed;
   display: flex;
   justify-content: center;
   width: 100%;
   height: 82px;
-  background: #1d1d1d;
   top: 0;
+  z-index: 5;
 }
 
 .container {
+  background: #1d1d1d;
   position: fixed;
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -23,6 +25,7 @@ header {
 }
 
 h1 {
+  padding-left: 10px;
   color: #fff;
   font-size: 2.4em;
   font-family: "Montserrat Alternates", sans-serif;
@@ -71,6 +74,7 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: end;
+  padding-right: 20px;
   height: 50px;
   font-size: 2.5em;
   z-index: 2;

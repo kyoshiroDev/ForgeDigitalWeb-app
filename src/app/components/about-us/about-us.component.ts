@@ -11,8 +11,8 @@ import { NgOptimizedImage } from '@angular/common';
 export class AboutUsComponent {
   protected readonly abouts = signal<{name:string, content: string | number}[]>([
     {name:<string>"Nom :", content:<string>"Grégory Tahir"},
-    {name:<string>"JOB :", content:<string>"Développeur web JavaScript"},
-    {name:<string>"Age :", content:<string | number> 38 + ` Ans`},
+    {name:<string>"Job :", content:<string>"Développeur web JavaScript"},
+    {name:<string>"Age :", content:<string | number> 39 + ` Ans`},
     {name:<string>"Ville :", content:<string>"Essonnes, Île-de-France"}
   ])
 }

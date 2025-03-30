@@ -6,26 +6,30 @@
 
 /* Font Montserrat Alternates*/
 @font-face {
-  font-family:'Montserrat Alternates';
-  src: local('Montserrat_Alternates'),
-  url('./assets/Fonts/Montserrat_Alternates/MontserratAlternates-Bold.ttf'),
-  url('./assets/Fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf');
+  font-family: 'Montserrat Alternates';
+  src: url('/assets/Fonts/Montserrat_Alternates/MontserratAlternates-Regular.ttf') format('truetype');
   font-display: swap;
+}
 
-/* Font Lato */
-}@font-face {
-  font-family:'Lato';
-  src: local('Lato'),
-  url('./assets/Fonts/Lato/Lato-Bold.ttf'),
-  url('./assets/Fonts/Lato/Lato-Regular.ttf');
+@font-face {
+  font-family: 'Lato';
+  src:
+  url('/assets/Fonts/Lato/Lato-Regular.ttf') format('truetype');
   font-display: swap;
 }
 
 body{
-  background: #1d1d1d;
   font-size: 62.5%;
-  height: 100svh;
+  height: 100dvh;
   margin: 0;
+}
+
+p, li, a{
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat',serif;
 }
 
 body, html {
