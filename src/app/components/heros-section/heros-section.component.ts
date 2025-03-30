@@ -1,4 +1,4 @@
-import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
+import {Component, AfterViewInit, ElementRef, ViewChild, OnInit} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
@@ -19,7 +19,7 @@ import { faLinkedin, faSquareGithub,} from '@fortawesome/free-brands-svg-icons';
   styleUrl: './heros-section.component.css'
 })
 
-export class HerosSectionComponent implements AfterViewInit {
+export class HerosSectionComponent implements OnInit {
 
   @ViewChild('heroContainer', { static: false }) heroContainer!: ElementRef;
   @ViewChild('heroTitle', { static: false }) heroTitle!: ElementRef;
@@ -30,7 +30,7 @@ export class HerosSectionComponent implements AfterViewInit {
   faLinkedin = faLinkedin;
   faSquareGithub = faSquareGithub;
 
-  ngAfterViewInit() {
+  ngOnInit() {
     if (!this.heroContainer?.nativeElement) return;
 
     gsap.fromTo(this.heroTitle.nativeElement.children,

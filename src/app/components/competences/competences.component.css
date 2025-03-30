@@ -8,9 +8,8 @@
 
 h3 {
   text-align: center;
-  font-size: 3em;
+  font-size: 4em;
   color: #ffffff;
-  font-family: "Montserrat Alternates", serif;
   margin-top: 80px;
 }
 
@@ -61,7 +60,7 @@ img{
 @media screen and (min-width: 950px) {
   .container-front-back {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
 
