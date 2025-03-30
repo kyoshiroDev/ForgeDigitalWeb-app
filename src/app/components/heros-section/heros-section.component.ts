@@ -19,7 +19,7 @@ import { faLinkedin, faSquareGithub,} from '@fortawesome/free-brands-svg-icons';
   styleUrl: './heros-section.component.css'
 })
 
-export class HerosSectionComponent implements OnInit {
+export class HerosSectionComponent implements AfterViewInit {
 
   @ViewChild('heroContainer', { static: false }) heroContainer!: ElementRef;
   @ViewChild('heroTitle', { static: false }) heroTitle!: ElementRef;
@@ -30,7 +30,7 @@ export class HerosSectionComponent implements OnInit {
   faLinkedin = faLinkedin;
   faSquareGithub = faSquareGithub;
 
-  ngOnInit() {
+  ngAfterViewInit() {
     if (!this.heroContainer?.nativeElement) return;
 
     gsap.fromTo(this.heroTitle.nativeElement.children,
