@@ -33,8 +33,8 @@ export class ProjetsService {
       titre: "Garage V Parrot",
       description: "Création d'un site de garage automobile pour mettre en pratique mes acquis ",
       languages: ['React', "Next.Js","Tailwind"],
-      buttonSite: "https://refuge-des-tortues.netlify.app/",
-      buttonGithub: "https://github.com/kyoshiroDev/Site-des-tortues"
+      buttonSite: "https://garage-v-parrot-next-js.vercel.app/",
+      buttonGithub: "https://github.com/kyoshiroDev/garage-v-parrot-NextJS"
     },
   ]
 
