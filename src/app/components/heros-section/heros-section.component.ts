@@ -1,4 +1,4 @@
-import {Component, AfterViewInit, ElementRef, ViewChild, OnInit} from '@angular/core';
+import {Component, AfterViewInit, ElementRef, ViewChild} from '@angular/core';
 import { NgOptimizedImage } from '@angular/common';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
