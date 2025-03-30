@@ -1,17 +1,21 @@
 User-agent: *
-Disallow: /assets/
-Disallow: /environment/
-Disallow: /node_modules/
-Disallow: /src/
-Disallow: /tests/
-Disallow: /e2e/
+Allow: /
+
+# Empêcher l'indexation des dossiers sensibles
+Disallow: /assets/private/
+Disallow: /api/
+Disallow: /admin/
+
+# Bloquer les fichiers inutiles pour le SEO
+Disallow: /*.json$
+Disallow: /*.ts$
 Disallow: /*.map$
 
-# Autoriser l'exploration des fichiers nécessaires
-Allow: /assets/images/
-Allow: /assets/css/
-Allow: /assets/js/
+# Autoriser l'accès aux fichiers CSS et JS nécessaires au rendu
+Allow: /*.css$
+Allow: /*.js$
 
-# Ajouter un sitemap si disponible
-Sitemap: https://www.exemple.com/sitemap.xml
+# Lien vers le sitemap
+Sitemap: https://www.ton-domaine.com/sitemap.xml
+
 

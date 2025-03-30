@@ -21,8 +21,6 @@
             "tsConfig": "tsconfig.app.json",
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
-              "node_modules/primeng/resources/primeng.min.css",
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.css"
             ],
@@ -59,7 +57,6 @@
         },
         "serve": {
           "options": {
-            "proxyConfig": "proxy.conf.json"
           },
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {

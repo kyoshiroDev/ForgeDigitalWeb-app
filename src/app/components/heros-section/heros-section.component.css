@@ -1,4 +1,5 @@
 .container-hero-section {
+  background: #1d1d1d;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -26,6 +27,7 @@ h3 {
 }
 
 h4 {
+  text-align: center;
   font-size: 2.7em;
   margin: 10px;
   color: #2272ff;
