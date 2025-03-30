@@ -4,12 +4,15 @@
     <p>Front-End</p>
     <div class="container-competences-img-front">
       @for(competence of competencesFront(); track competence.src){
+        <figure class="image-container">
         <img
         [ngSrc]="competence.src"
         [alt]="competence.alt"
         width="60"
         height="62"
         />
+        <figcaption>{{ competence.alt}}</figcaption>
+        </figure>
       }
     </div>
   </div>

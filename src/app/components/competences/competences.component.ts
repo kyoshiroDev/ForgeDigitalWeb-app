@@ -15,12 +15,12 @@ gsap.registerPlugin(ScrollTrigger);
 export class CompetencesComponent implements AfterViewInit {
   @ViewChild('competencesContainer', {static: true}) competencesContainer!: ElementRef;
   protected readonly competencesFront = signal<{src:string, alt:string}[]>([
-    {src:"assets/Images/html.svg", alt:"logo-html5"},
-    {src:"assets/Images/css.svg", alt:"logo-css3"},
-    {src:"assets/Images/bootstrap.svg", alt:"logo-bootstrap"},
-    {src:"assets/Images/js.svg", alt:"logo-javascript"},
-    {src:"assets/Images/angular.svg", alt:"logo-angular"},
-    {src:"assets/Images/Nextjs.webp", alt:"logo-nextjs"}
+    {src:"assets/Images/html.svg", alt:"HTML 5"},
+    {src:"assets/Images/css.svg", alt:"CSS 3"},
+    {src:"assets/Images/tailwind.webp", alt:"Tailwind CSS"},
+    {src:"assets/Images/js.svg", alt:"JavaScript"},
+    {src:"assets/Images/angular.svg", alt:"Angular"},
+    {src:"assets/Images/Nextjs.webp", alt:"Next.js"}
 ])
 
   ngAfterViewInit() {
