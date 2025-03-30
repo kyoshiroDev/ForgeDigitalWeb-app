@@ -20,7 +20,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: max-content;
   padding: 20px;
   background-color: white;
