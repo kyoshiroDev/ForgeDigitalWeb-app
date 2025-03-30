@@ -14,6 +14,7 @@ export class HeaderComponent {
 
   protected readonly menu = signal<{href:string, name:string}[]>([
     {href:"#", name:"ACCUEIL"},
+    {href:"#a-propos", name:"À-PROPOS"},
     {href:"#mes-competences", name:"COMPETENCES"},
     {href:"#mes-projets", name:"PROJETS"},
     {href:"#contact", name:"CONTACT"}

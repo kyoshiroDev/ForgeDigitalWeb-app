@@ -1,9 +1,9 @@
-<div class="container-hero-section">
-  <div class="title">
+<div class="container-hero-section" #heroContainer>
+  <div class="title" #heroTitle>
     <h2>Hello, je suis </h2>
     <h3>Gregory</h3>
     <h4>Développeur web JavaScript</h4>
-    <div class="contact-container">
+    <div class="contact-container" #heroLinks>
       <a href="https://www.linkedin.com/in/gregory-tahir-6858b3249/" target="_blank">
         <fa-icon class="fa-icon" [icon]="faLinkedin"></fa-icon>
       </a>
@@ -15,14 +15,13 @@
       <a href="assets/CV_Tahir_Gregory.pdf" class="button-cv" download="Cv TAHIR Gregory.pdf">Télécharger mon CV</a>
     </div>
   </div>
-  <div class="img">
-    <img 
-    ngSrc="assets/Images/hero-section.png" 
-    alt="ordinateur" 
-    width="1080"
-    height="675"
-    priority
-    class="computer-img">
+  <div class="img" #heroImg>
+    <img
+      ngSrc="assets/Images/hero-section.png"
+      alt="ordinateur"
+      width="1080"
+      height="675"
+      priority
+      class="computer-img">
   </div>
-
 </div>
